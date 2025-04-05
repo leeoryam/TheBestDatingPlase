@@ -5,64 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Best Dating Place 💕🌹</title>
     <style>
-        /* CSS with pink, red, and black colors */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ff6f91, #d90429); /* Pink to Red gradient */
+            background: linear-gradient(135deg, #ff6f91, #d90429);
             min-height: 100vh;
-            color: #1a1a1a; /* Dark gray-black text */
+            color: #1a1a1a;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-
         header {
             background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            animation: slideIn 1s ease-out;
         }
-
         h1 {
             margin: 0;
-            color: #1a1a1a; /* Blackish */
+            color: #1a1a1a;
             font-size: 2.5em;
-            background: linear-gradient(to right, #ff006e, #d00000); /* Pink to Red gradient */
+            background: linear-gradient(to right, #ff006e, #d00000);
             -webkit-background-clip: text;
             color: transparent;
         }
-
         .section {
             background: rgba(255, 255, 255, 0.95);
             padding: 25px;
             border-radius: 15px;
             margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 1.5s ease-in;
         }
-
         h2 {
-            color: #d90429; /* Red */
+            color: #d90429;
             margin-top: 0;
             font-size: 1.8em;
         }
-
         .tableau-container {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 111, 145, 0.4); /* Pink glow */
+            box-shadow: 0 0 20px rgba(255, 111, 145, 0.4);
         }
-
         .tableau-container iframe {
             position: absolute;
             top: 0;
@@ -71,51 +61,12 @@
             height: 100%;
             border: none;
         }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .stat-card {
-            background: linear-gradient(45deg, #ff006e, #1a1a1a); /* Pink to Black gradient */
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .stat-card:hover {
-            transform: scale(1.05);
-        }
-
         footer {
             text-align: center;
             padding: 20px;
             color: white;
-            background: rgba(0, 0, 0, 0.7); /* Darker black with transparency */
+            background: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
-        }
-
-        /* Animations */
-        @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container { padding: 10px; }
-            h1 { font-size: 2em; }
-            h2 { font-size: 1.5em; }
         }
     </style>
 </head>
@@ -125,76 +76,19 @@
             <h1>The Best Dating Place 💕🌹🍷</h1>
             <p>Explore insights with Tableau magic! ✨</p>
         </header>
-
         <div class="section">
             <h2>Featured Dashboard 🌟</h2>
             <p>Check out our interactive Tableau visualization below! 👇</p>
             <div class="tableau-container">
-                <iframe src="https://public.tableau.com/views/Book1_17438438481150/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
-                    allowfullscreen></iframe>
+                <iframe src="https://public.tableau.com/views/_17438457932380/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+                    allowfullscreen 
+                    scrolling="no" 
+                    frameborder="0"></iframe>
             </div>
         </div>
-
-        <div class="section">
-            <h2>Key Metrics 📊</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3>Users 👥</h3>
-                    <p>15,234.
-
-                    <p>15,234</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Revenue 💰</h3>
-                    <p>$245,678</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Growth 📈</h3>
-                    <p>23.5%</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Engagement ⏰</h3>
-                    <p>8.2 min</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>בדיחת דייטים 😂</h2>
-            <p>למה הדייט שלי עם הסטטיסטיקאי נכשל? כי הוא כל הזמן חיפש קורלציה בין המנה הראשונה לקינוח! 📉🍽️</p>
-        </div>
-
         <footer>
             <p>© 2025 The Best Dating Place | Made with ❤️ & ☕</p>
         </footer>
     </div>
-
-    <script>
-        // JavaScript for interactivity
-        document.addEventListener('DOMContentLoaded', () => {
-            // Simple animation for stat cards
-            const statCards = document.querySelectorAll('.stat-card');
-            statCards.forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    card.style.background = 'linear-gradient(45deg, #d90429, #ff6f91)'; /* Red to Pink */
-                });
-                card.addEventListener('mouseleave', () => {
-                    card.style.background = 'linear-gradient(45deg, #ff006e, #1a1a1a)'; /* Pink to Black */
-                });
-            });
-
-            // Scroll animation for sections
-            const sections = document.querySelectorAll('.section');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animation = 'fadeIn 1s ease-in forwards';
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            sections.forEach(section => observer.observe(section));
-        });
-    </script>
 </body>
 </html>
